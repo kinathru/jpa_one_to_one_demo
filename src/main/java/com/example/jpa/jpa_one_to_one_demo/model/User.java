@@ -48,7 +48,7 @@ public class User implements Serializable
     {
     }
 
-    public User( Long id, @NotNull @Size(max = 65) String firstName, @Size(max = 65) String lastName, @NotNull @Email @Size(max = 100) String email, @NotNull @Size(max = 128) String password )
+    public User( @NotNull @Size(max = 65) String firstName, @Size(max = 65) String lastName, @NotNull @Email @Size(max = 100) String email, @NotNull @Size(max = 128) String password )
     {
         this.id = id;
         this.firstName = firstName;
